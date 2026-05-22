@@ -80,11 +80,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-height: 165px;
 }
 
 .repo-card h4 {
   color: #38bdf8;
   margin-bottom: 0.5rem;
+  margin-top: 0;
 }
 
 .repo-card p {
@@ -103,10 +105,58 @@
 .repo-link {
   color: #38bdf8;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .repo-link:hover {
   text-decoration: underline;
+}
+
+.error-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #0f172a;
+  padding: 1rem;
+}
+
+.error-box {
+  background-color: #1e293b;
+  border: 2px solid #ef4444;
+  padding: 2.5rem;
+  border-radius: 12px;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+.error-box h2 {
+  color: #ef4444;
+  margin-top: 0;
+  font-size: 1.6rem;
+}
+
+.error-box p {
+  color: #cbd5e1;
+  margin: 1.5rem 0;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.retry-btn {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.retry-btn:hover {
+  background-color: #dc2626;
 }
 
 .loading {
@@ -116,15 +166,4 @@
   height: 100vh;
   font-size: 1.2rem;
   color: #38bdf8;
-}
-
-.error-banner {
-  background-color: #7f1d1d;
-  color: #fca5a5;
-  padding: 1rem;
-  border-radius: 8px;
-  margin-bottom: 2rem;
-  border: 1px solid #ef4444;
-  font-size: 0.9rem;
-  text-align: center;
 }
